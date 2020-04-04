@@ -11,12 +11,13 @@ body {
 	height: 100%;
 }
 body {
-	font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  // font-family: 'Cabin', sans-serif;
+	font-size: 24px;
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
-  line-height: 24px;
-  background-color: #fff;
+  line-height: 28px;
+  color: $text;
+  background-color: $accent;
 }
 a {
 	display: inline-block;
@@ -75,9 +76,9 @@ textarea {
 	flex: 0 0 auto;
 }
 .container {
-  max-width: 1210px;
+  max-width: 1230px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 20px;
-  padding-right: 20px; 
+	padding-left: 15px;
+  padding-right: 15px; 
 }

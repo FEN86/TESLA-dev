@@ -2,3 +2,129 @@
 @import "fonts";
 @import "global";
 
+
+
+.header__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+.header {
+  height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(11, 11, 11, 0.3);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.logo {
+  width: 240px;
+  height: 55px;
+  flex: none;
+}
+.header__btn {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: $text, $alpha: 0.1);
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    background-color: rgba($color: $text, $alpha: 0.4);
+  }
+}
+.header__btn-line {
+  width: 36px;
+  height: 2px;
+  background-color: $text;
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 2px;
+    background-color: $text;
+  }
+  &::before {
+    top: 13px;
+  }
+  &::after {
+    bottom: 13px;
+  }
+}
+.header-content__title {
+  font-size: 96px;
+  line-height: 112px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.header-content__text {
+  max-width: 284px;
+  margin-bottom: 25px;
+}
+.btn {
+  border: 1px solid $text;
+  background-color: rgba($color: $text, $alpha: 0.15);
+  padding: 30px 62px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    background-color: #770302;
+  }
+}
+.slider__item {
+  @include bg;
+  height: 100vh;
+  min-height: 650px;
+}
+.slider {
+  .slick-dots {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    z-index: 2;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li + li {
+      margin-left: 20px;
+    }
+    button {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: none;
+      font-size: 0;
+      line-height: 0;
+      background-color: #000;
+      cursor: pointer; 
+    }
+    .slick-active {
+      button {
+        background-color: #fff;
+      }
+    }
+  }
+}

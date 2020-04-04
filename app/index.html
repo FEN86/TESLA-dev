@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TESLA</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -13,7 +16,32 @@
 <body>
   <div class="wrapper">
     <div class="content">
-      <header class="header"></header>
+      <div class="header__wrapper">
+        <header class="header">
+          <div class="container">
+            <div class="header-top">
+              <a href="#" class="logo"><img class="logo__img" src="images/logo.png" alt="TESLA"></a>
+              <div class="header__btn">
+                <div class="header__btn-line"></div>
+              </div>
+            </div>
+            <div class="header-content">
+              <h1 class="header-content__title" lang="en">Roadster</h1>
+              <p class="header-content__text">Самый быстрый автомобиль в мире, с рекордным ускорением, дальностью и
+                производительностью.</p>
+              <a href="#" class="btn">Хочу тест драйв</a>
+            </div>
+          </div>
+        </header>
+        <div class="slider__wrapper">
+          <div class="slider">
+            <div class="slider__item" style="background-image: url(images/slide_01.jpg);"></div>
+            <div class="slider__item" style="background-image: url(images/slide_02.jpg);"></div>
+            <div class="slider__item" style="background-image: url(images/slide_03.jpg);"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <footer class="footer"></footer>
   </div>
